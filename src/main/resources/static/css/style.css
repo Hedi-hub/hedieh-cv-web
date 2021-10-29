@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -75,7 +77,7 @@ body{
     /*float: left;*/
     /*margin-left: auto;*/
     width: 90%;
-    margin: 0 auto;
+    margin: 10% auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -84,11 +86,21 @@ body{
 }
 .three-sections-parts{
     background-color: #FFBD59;
-    width: 20%;
-    height: 25vh;
+    width: 300px;
+    height: 300px;
     box-shadow: 0 1px 4px rgba(0,0, 0, 0.2);
-    padding:50px 80px;
     display: inline-block;
-    margin-right:10%
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: #565AFF;
+}
+.box-image{
+    width: 300px;
+    height: 300px;
+}
+.box-text{
+    width: fit-content;
+    margin: 45% auto;
 }
 
