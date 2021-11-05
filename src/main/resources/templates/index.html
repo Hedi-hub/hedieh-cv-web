@@ -10,7 +10,7 @@
 <body>
 
         <header class="header-wrap">
-            <div class="logo-wrap">
+            <div class="logo-wrap" id="logo-wrap">
                 <a ><img src="/images/hediLogo-white.png" style="width:100px;"/></a>
             </div>
             <div class="logo-title">HADIEH SHAFAEE</div>
@@ -18,7 +18,7 @@
 
     <div class="container" id="container" >
 
-        <div class="heading-text">SHE ACCEPTS <br> THE <span class="word-challenge"> &nbsp;CHALLENGE</span></div>
+        <div class="heading-text" id="heading-text">SHE ACCEPTS <br> THE <span class="word-challenge"> &nbsp;CHALLENGE</span></div>
 
         <div class="three-sections">
           <div class="box-wrap">
@@ -46,6 +46,14 @@
         if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10){
             document.body.classList.add("scrolledStyle");
             document.getElementById("container").classList.add("scrolledStyle");
+            document.getElementById("heading-text").classList.add("scrolledStyle");
+            document.getElementById("logo-wrap").classList.add("scrolledStyle");
+        }
+        else if (document.body.scrollTop < 10 || document.documentElement.scrollTop <10){
+            document.getElementById("container").classList.remove("scrolledStyle");
+            document.getElementById("heading-text").classList.remove("scrolledStyle");
+            document.getElementById("logo-wrap").classList.remove("scrolledStyle");
+            document.body.classList.remove("scrolledStyle");
         }
     }
 </script>

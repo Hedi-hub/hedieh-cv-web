@@ -7,6 +7,7 @@ body{
     width: 100%;
     background-color: transparent;
     color: rgb(0,0,0);
+
 }
 
 .header-wrap {
@@ -48,6 +49,7 @@ body{
     display: flex;
     flex-direction: row;
 
+
 }
 
 .container {
@@ -57,6 +59,8 @@ body{
     padding-top: 100px;
     background-color: #FFFFFF;
     font-family: 'Squada One', sans-serif;
+
+
 }
 
 .heading-text{
@@ -117,4 +121,10 @@ body{
     background-color: bisque;
     color: white;
 }
+
+/*.logo-wrap, .container, .heading-text{*/
+/*    transition-property: color, background-color;*/
+/*    transition: 0.6s;*/
+/*}*/
+
 
