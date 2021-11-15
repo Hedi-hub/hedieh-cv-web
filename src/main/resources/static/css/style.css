@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 body{
     margin: 0;
@@ -46,10 +47,38 @@ body{
 }
 
 .logo-wrap {
+    width: fit-content;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+
+}
+.row{
     display: flex;
     flex-direction: row;
 
+}
+.letter{
+    width:22px;
+    height: 22px;
+    line-height: 22px;
+    text-align: center;
+    margin: 3px;
+    border-radius: 50%;
+    padding:15px;
 
+}
+.one{
+    background-color: #FFBD59;
+    color: #565AFF;
+}
+.two, .three{
+    background-color: #565AFF;
+    color: white;
+}
+.four{
+    background-color: #565AFF;
+    color: #FFBD59;
 }
 
 .container {
