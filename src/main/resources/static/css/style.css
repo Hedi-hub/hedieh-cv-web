@@ -26,6 +26,7 @@ body{
     padding-top: 40px;
     color:transparent;
     letter-spacing: 1px;
+    margin-top: 2%;
     
 }
 
@@ -93,7 +94,7 @@ body{
 }
 
 .heading-text{
-    width: 90%;
+    width: 80%;
     margin: 5% auto;
     font-size: 90px;
     margin-left: auto;
@@ -150,6 +151,7 @@ body{
     background-color: bisque;
     color: white;
 }
+
 
 /*.logo-wrap, .container, .heading-text{*/
 /*    transition-property: color, background-color;*/

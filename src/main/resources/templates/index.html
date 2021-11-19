@@ -9,55 +9,57 @@
 </head>
 <body>
 
-        <header class="header-wrap">
-            <div class="logo-wrap" id="logo-wrap">
-<!--                <a ><img src="/images/hediLogo-white.png" style="width:100px;"/></a>-->
-                <div class="row">
-                    <div class="letter one">H</div>
-                    <div class="letter two">E</div>
-                </div>
-                <div class="row">
-                    <div class="letter three">D</div>
-                    <div class="letter four">I</div>
-                </div>
+<header class="header-wrap">
+    <div class="logo-wrap" id="logo-wrap">
+        <!--                <a ><img src="/images/hediLogo-white.png" style="width:100px;"/></a>-->
+        <div class="row">
+            <div class="letter one">H</div>
+            <div class="letter two">E</div>
+        </div>
+        <div class="row">
+            <div class="letter three">D</div>
+            <div class="letter four">I</div>
+        </div>
+    </div>
+    <div class="logo-title">HADIEH SHAFAEE</div>
+</header>
+
+<div class="container" id="container">
+
+    <div class="heading-text" id="heading-text">SHE ACCEPTS <br> THE <span
+            class="word-challenge"> &nbsp;CHALLENGE</span></div>
+
+    <div class="three-sections">
+        <div class="box-wrap">
+            <div class="three-sections-parts">
+                <div class="box-text">ABOUT ME</div>
             </div>
-            <div class="logo-title">HADIEH SHAFAEE</div>
-        </header>
-
-    <div class="container" id="container" >
-
-        <div class="heading-text" id="heading-text">SHE ACCEPTS <br> THE <span class="word-challenge"> &nbsp;CHALLENGE</span></div>
-
-        <div class="three-sections">
-          <div class="box-wrap">
-              <div class="three-sections-parts">
-                  <div class="box-text">ABOUT ME</div>
-              </div>
-              <img class="box-image" th:src="@{images/portfolio-pic-desk.jpg}">
-          </div>
+            <img class="box-image" th:src="@{images/portfolio-pic-desk.jpg}">
+        </div>
+        <a th:href="@{/projects}">
             <div class="three-sections-parts">
                 <div class="box-text">MY PROJECTS</div>
             </div>
-            <div class="three-sections-parts">
-                <div class="box-text">MY RESUME</div>
-            </div>
+        </a>
+        <div class="three-sections-parts">
+            <div class="box-text">MY RESUME</div>
         </div>
-
     </div>
 
+</div>
+
 <script>
-    window.onscroll =function (){
+    window.onscroll = function () {
         changeBackgroundOnScroll()
     };
 
-    function changeBackgroundOnScroll(){
-        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10){
+    function changeBackgroundOnScroll() {
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
             document.body.classList.add("scrolledStyle");
             document.getElementById("container").classList.add("scrolledStyle");
             document.getElementById("heading-text").classList.add("scrolledStyle");
             document.getElementById("logo-wrap").classList.add("scrolledStyle");
-        }
-        else if (document.body.scrollTop < 10 || document.documentElement.scrollTop <10){
+        } else if (document.body.scrollTop < 10 || document.documentElement.scrollTop < 10) {
             document.getElementById("container").classList.remove("scrolledStyle");
             document.getElementById("heading-text").classList.remove("scrolledStyle");
             document.getElementById("logo-wrap").classList.remove("scrolledStyle");

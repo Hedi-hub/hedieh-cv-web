@@ -14,4 +14,9 @@ public class HomePageController {
     public String showHomePage(Model model){
         return "index";
     }
+
+    @RequestMapping("/projects")
+    public String getMyProjects(){
+        return "projects";
+    }
 }
