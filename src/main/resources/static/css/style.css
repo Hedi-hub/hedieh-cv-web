@@ -151,6 +151,15 @@ body{
     background-color: bisque;
     color: white;
 }
+.projects-wrap{
+    justify-content: space-evenly;
+}
+.project-box{
+    background-color: grey;
+}
+.container-projects{
+    text-align: center;
+}
 
 
 /*.logo-wrap, .container, .heading-text{*/
