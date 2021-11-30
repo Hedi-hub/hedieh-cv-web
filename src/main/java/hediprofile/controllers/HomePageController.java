@@ -19,4 +19,13 @@ public class HomePageController {
     public String getMyProjects(){
         return "projects";
     }
+
+    @RequestMapping("/about-me")
+    public String getAboutMe(){
+        return "about-me";
+    }
+    @RequestMapping("/my-resume")
+    public String getMyResume(){
+        return "my-resume";
+    }
 }
