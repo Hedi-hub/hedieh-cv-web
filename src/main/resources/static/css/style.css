@@ -83,7 +83,7 @@ body{
 
 .container {
     /*max-width: 400px;*/
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding-top: 100px;
     background-color: #FFFFFF;
@@ -109,7 +109,7 @@ body{
 .three-sections{
     /*float: left;*/
     /*margin-left: auto;*/
-    width: 90%;
+    width: 95%;
     margin: 10% auto;
     display: flex;
     flex-direction: row;
@@ -119,8 +119,8 @@ body{
 }
 .three-sections-parts{
     background-color: #ffa62b;
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
     box-shadow: 0 1px 4px rgba(0,0, 0, 0.2);
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
@@ -139,8 +139,8 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
 }
 .box-text{
     width: fit-content;
