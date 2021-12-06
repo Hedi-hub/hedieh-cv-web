@@ -31,19 +31,26 @@
 
     <div class="three-sections">
 
-        <a th:href="@{/about-me}">
+        <a th:href="@{/about-me}" onmouseover="textAnimation();" >
             <div class="box-wrap">
                 <div class="three-sections-parts">
-                    <div class="box-text">ABOUT ME</div>
+<!--                    <div class="box-text">ABOUT ME</div>-->
+                    <h1 class="ml9" id="about-text">
+                        <span class="text-wrapper"><span class="letters">ABOUT ME</span></span>
+                    </h1>
                 </div>
                 <img class="box-image" th:src="@{images/hedi-hip.jpeg}">
+
             </div>
         </a>
 
         <a th:href="@{/projects}">
             <div class="box-wrap">
                 <div class="three-sections-parts">
-                    <div class="box-text">MY PROJECTS</div>
+<!--                    <div class="box-text">MY PROJECTS</div>-->
+                    <h1 class="ml9">
+                        <span class="text-wrapper"><span class="letters">MY PROJECTS</span></span>
+                    </h1>
                 </div>
                 <img class="box-image" th:src="@{images/coding-projects.jpg}">
             </div>
@@ -52,7 +59,10 @@
         <a th:href="@{/my-resume}">
             <div class="box-wrap">
                 <div class="three-sections-parts">
-                    <div class="box-text">MY RESUME</div>
+<!--                    <div class="box-text">MY RESUME</div>-->
+                    <h1 class="ml9">
+                        <span class="text-wrapper"><span class="letters">MY RESUME</span></span>
+                    </h1>
                 </div>
                 <img class="box-image" th:src="@{images/hedi-resume-pic.png}">
 
@@ -81,6 +91,33 @@
             document.body.classList.remove("scrolledStyle");
         }
     }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<script>
+   function textAnimation(){
+       // Wrap every letter in a span
+       var textWrapper = document.querySelector('.ml9 .letters');
+       textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+       // document.getElementById("about-text").style.display="block";
+
+       anime.timeline({loop: true})
+           .add({
+               targets: '.ml9 .letter',
+               scale: [0, 1],
+               duration: 1500,
+               elasticity: 600,
+               delay: (el, i) => 45 * (i+1)
+           }).add({
+           targets: '.ml9',
+           opacity: 0,
+           duration: 1000,
+           easing: "easeOutExpo",
+           delay: 1000
+       });
+   }
+
 </script>
 
 </body>
