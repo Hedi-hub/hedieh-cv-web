@@ -31,8 +31,8 @@
 
     <div class="three-sections">
 
-        <a th:href="@{/about-me}" onmouseover="textAnimation();" >
-            <div class="box-wrap">
+        <a th:href="@{/about-me}"  >
+            <div class="box-wrap" onmouseover="textAnimation('.ml9 .letters', '.ml9 .letter', '.ml9');">
                 <div class="three-sections-parts">
 <!--                    <div class="box-text">ABOUT ME</div>-->
                     <h1 class="ml9" id="about-text">
@@ -45,10 +45,10 @@
         </a>
 
         <a th:href="@{/projects}">
-            <div class="box-wrap">
+            <div class="box-wrap" onmouseover="textAnimation('.ml10 .letters', '.ml10 .letter', '.ml10');">
                 <div class="three-sections-parts">
 <!--                    <div class="box-text">MY PROJECTS</div>-->
-                    <h1 class="ml9">
+                    <h1 class="ml10">
                         <span class="text-wrapper"><span class="letters">MY PROJECTS</span></span>
                     </h1>
                 </div>
@@ -57,10 +57,10 @@
         </a>
 
         <a th:href="@{/my-resume}">
-            <div class="box-wrap">
+            <div class="box-wrap" onmouseover="textAnimation('.ml11 .letters', '.ml11 .letter', '.ml11');">
                 <div class="three-sections-parts">
 <!--                    <div class="box-text">MY RESUME</div>-->
-                    <h1 class="ml9">
+                    <h1 class="ml11">
                         <span class="text-wrapper"><span class="letters">MY RESUME</span></span>
                     </h1>
                 </div>
@@ -96,23 +96,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 <script>
-   function textAnimation(){
+   function textAnimation(selector, singleSelector, singleSpan){
        // Wrap every letter in a span
-       var textWrapper = document.querySelector('.ml9 .letters');
+       var textWrapper = document.querySelector(selector);
        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
        // document.getElementById("about-text").style.display="block";
 
        anime.timeline({loop: true})
            .add({
-               targets: '.ml9 .letter',
+               targets: singleSelector,
                scale: [0, 1],
                duration: 1500,
                elasticity: 600,
                delay: (el, i) => 45 * (i+1)
            }).add({
-           targets: '.ml9',
+           targets: singleSpan,
            opacity: 0,
-           duration: 1000,
+           duration: 2000000,
            easing: "easeOutExpo",
            delay: 1000
        });
