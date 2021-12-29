@@ -1,53 +1,62 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.w3.org/1999/xhtml">
 <head th:replace="fragments/header :: head">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
-  <link href="/fontawesome/css/all.css" rel="stylesheet">
-  <title>hadieh - shafaee.com</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
+    <link href="/fontawesome/css/all.css" rel="stylesheet">
+    <title>hadieh - shafaee.com</title>
 </head>
 <body class="projects-body">
 
 <header class="header-wrap">
-  <div class="logo-wrap" id="logo-wrap">
-    <!--                <a ><img src="/images/hediLogo-white.png" style="width:100px;"/></a>-->
-    <div class="row">
-      <div class="letter one">H</div>
-      <div class="letter two">E</div>
+    <div class="logo-wrap" id="logo-wrap">
+        <!--                <a ><img src="/images/hediLogo-white.png" style="width:100px;"/></a>-->
+        <div class="row">
+            <div class="letter one">H</div>
+            <div class="letter two">E</div>
+        </div>
+        <div class="row">
+            <div class="letter three">D</div>
+            <div class="letter four">I</div>
+        </div>
     </div>
-    <div class="row">
-      <div class="letter three">D</div>
-      <div class="letter four">I</div>
-    </div>
-  </div>
-  <div class="logo-title">HADIEH SHAFAEE</div>
+    <div class="logo-title">HADIEH SHAFAEE</div>
 </header>
 
-<div class="container container-projects" id="container" >
+<div class="container container-projects" id="container">
 
-  <div class="row about-me-content">
-    <div class=" left-col">
-      <img class="profile-pic-image" th:src="@{images/hedi-about-me-fake.jpeg}">
+    <div class="row about-me-content">
+        <div class=" left-col">
+            <img class="profile-pic-image" th:src="@{images/hedi-about-me-fake.jpeg}">
+        </div>
+
+        <div class=" right-col">
+            <h1>Hello</h1>
+            <h2>A bit about me: </h2>
+            <p>
+                I am looking to join a diverse team as an Entry-level Backend Software Developer specialising in Java,
+                SpringBoot. I am very motivated to expand my knowledge and skills towards working in a collaborative
+                environment to develop quality software solutions that address and solve business problems.
+                <br><br>
+                I am a skilled communicator with strong interpersonal and presentation skills. Also, I'm able to
+                maintain cultural sensitivity and establish consensus with members of diverse groups.
+                I also have a Master of Sustainable Fashion from ESMOD (International University of Art for Fashion in
+                Paris/Berlin) and Master courses in Marketing in Seoul National University, Korea and a Bachelor in
+                Textile Design and can use this interdisciplinary knowledge to solve problems in a unique way.
+            </p>
+
+            <div>
+                <h2>Want to learn more?</h2>
+                <img th:src="@{images/down-arrow (1).png}">
+                <a class="project-button about-me-button" th:href="@{/my-resume}">Go to my resume page</a>
+            </div>
+
+        </div>
+
     </div>
-
-    <div class=" right-col">
-      <h1>Hello</h1>
-      <h2>A bit about me: </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-        eu fugiat nulla pariatur.
-      </p>
-
-    </div>
-
-  </div>
 
 </div>
-
 
 
 </body>
