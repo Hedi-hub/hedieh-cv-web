@@ -9,6 +9,7 @@
 </head>
 <body class="projects-body">
 
+<a th:href="@{/}">
 <header class="header-wrap">
     <div class="logo-wrap" id="logo-wrap">
         <!--                <a ><img src="/images/hediLogo-white.png" style="width:100px;"/></a>-->
@@ -23,7 +24,7 @@
     </div>
     <div class="logo-title">HADIEH SHAFAEE</div>
 </header>
-
+</a>
 <div class="container container-projects" id="container">
 
     <div class="row about-me-content">
@@ -46,10 +47,11 @@
                 Textile Design and can use this interdisciplinary knowledge to solve problems in a unique way.
             </p>
 
-            <div>
+            <div class="button-content">
                 <h2>Want to learn more?</h2>
-                <img th:src="@{images/down-arrow (1).png}">
-                <a class="project-button about-me-button" th:href="@{/my-resume}">Go to my resume page</a>
+                <img th:src="@{images/down-arrow-broke.png}">
+                <br>
+                <a class="about-me-button" th:href="@{/my-resume}">Resume</a>
             </div>
 
         </div>

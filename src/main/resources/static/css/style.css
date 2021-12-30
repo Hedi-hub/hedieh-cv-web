@@ -101,6 +101,9 @@ body{
     font-family: 'Bowlby One SC', cursive;
 
 }
+.custom-heading{
+    margin-left: 200px;
+}
 .word-challenge:hover {
     background-color:#ffa62b;
     color: #FFFFFF;
@@ -246,8 +249,25 @@ body{
     justify-content: center;
     text-align: center;
     margin-top: 10%;
+    margin-bottom: 10%;
 }
+.about-me-button{
+    font-size: 27px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 100px;
+    text-decoration: none;
+    color: black;
 
+
+}
+.about-me-button:hover{
+    color: #FFFFFF;
+}
+.button-content{
+    width: 30%;
+    text-align: center;
+}
 
 
 /*#about-text{*/
