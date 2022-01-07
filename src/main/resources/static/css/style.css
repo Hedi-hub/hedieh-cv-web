@@ -268,7 +268,58 @@ body{
     width: 30%;
     text-align: center;
 }
+.resume-wrap, .skills-wrap{
+    width: 80%;
+    margin: 0 auto;
+}
+.linkedin-row, .skills-row{
+    width: fit-content;
+    margin: 0 auto;
+}
+.linkedin-link{
+    margin-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 15px;
+    color: black;
+}
 
+.skills-wrap{
+    margin-top: 2%;
+}
+.skills-heading,.contacts-heading{
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.skillbar{
+    width: 50%;
+    height: 20px;
+    border: 2px solid black;
+    background-color:#4CACC5 ;
+    margin: 30px auto;
+
+}
+.skiilbar-colored{
+    background-color: #F9A62C;
+    height: 20px;
+
+}
+.intermediate{
+    width: 70%;
+
+}
+.advanced{
+    width: 98%;
+
+}
+.beginner{
+    width: 30%;
+
+}
 
 /*#about-text{*/
 /*    display: none;*/
