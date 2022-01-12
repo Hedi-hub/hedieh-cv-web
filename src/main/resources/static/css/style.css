@@ -334,6 +334,46 @@ body{
     font-size: 20px;
 
 }
+.education-work{
+    width: 90%;
+    margin: 3% auto;
+    margin-bottom: 25px;
+    justify-content: space-around;
+
+
+}
+.main-section-row{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.section-icon{
+    margin-top: 12px;
+}
+.year-range{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+
+}
+.text-info{
+    width: 80%;
+    font-family: 'Montserrat', sans-serif;
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 30px;
+
+}
+.column{
+    width: 45%;
+
+}
+
+
+
 
 /*#about-text{*/
 /*    display: none;*/
