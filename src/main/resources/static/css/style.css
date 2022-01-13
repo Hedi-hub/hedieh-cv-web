@@ -348,16 +348,25 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-bottom: 15%;
 
+}
+
+.info-row{
+    margin: 2% 0;
 }
 
 .section-icon{
     margin-top: 12px;
 }
 .year-range{
+    width: 20%;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 
+}
+.year-range-work{
+    width: 25%;
 }
 .text-info{
     width: 80%;
